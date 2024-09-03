@@ -3,113 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinan Daniel Cavusoglu</title>
+    <title>Ilgaz Uygur</title>
     <style>
+        /* Genel stil ayarları */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 1em 0;
             text-align: center;
+            margin-bottom: 40px;
         }
+
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #34495e;
-            padding: 0.5em 0;
-        }
-        nav a {
-            color: #ecf0f1;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            display: block;
-        }
-        nav a:hover {
-            background-color: #2980b9;
-        }
-        .container {
-            width: 85%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .bio-section {
-            background: #fff;
-            padding: 2em;
-            margin: 2em 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        img.profile-pic {
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            float: left;
-            margin-right: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
             text-align: center;
-            padding: 1em;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #003366;
+        }
+
+        /* About Me bölümü */
+        .about-me {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .about-me h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .about-me p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* My Goals bölümü */
+        .my-goals {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .my-goals h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .my-goals ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .my-goals li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Skills & Interests bölümü */
+        .skills-interests {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .skills-interests h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .skills-interests ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-interests li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Contact Me bölümü */
+        .contact-me {
+            background-color: #0066cc;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-me h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .contact-me p {
+            font-size: 1em;
+        }
+
+        .contact-me a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-me a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sinan Daniel Cavusoglu</h1>
-        <p>Hello There 👋</p>
+        <h1>Ilgaz Uygur</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="CSP Projects.html">CSP Projects</a> |
+            <a href="CS50 Courses.html">CS50 Courses</a> |
+            <a href="Develop in Swift.html">Develop in Swift</a>
+        </nav>
     </header>
+    
+    <section class="about-me">
+        <h2>About Me 📚</h2>
+        <p>Hello! I am a 10th-grade student at Hisar Schools, where I have developed a strong passion for computer science. Currently, I am deeply engaged in studying Java and Python, two languages that provide powerful tools for solving complex problems and creating innovative solutions. My enthusiasm for coding drives me to continually enhance my skills, whether through debugging challenging pieces of code 🧩 or undertaking new projects 🚀. I thrive on the challenges and excitement that programming offers, always eager to learn more and push my boundaries further.</p>
+    </section>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#early-life">Early Life</a>
-        <a href="#career">Career</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <section class="my-goals">
+        <h2>My Goals 🎯</h2>
+        <ul>
+            <li>Achieving excellent grades 📈</li>
+            <li>Excelling in AP courses 🏆</li>
+        </ul>
+    </section>
 
-    <div class="container">
-        <div id="about" class="bio-section">
-            <img src="profile-pic.jpg" alt="Your Name" class="profile-pic">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet libero id est fermentum, sit amet cursus quam pharetra.</p>
-        </div>
+    <section class="skills-interests">
+        <h2>Skills & Interests 🌟</h2>
+        <ul>
+            <li>Proficient in Java and Python 🐍</li>
+            <li>Interest in Artificial Intelligence and Machine Learning 🤖</li>
+            <li>Enthusiastic about web development and design 💻</li>
+            <li>Passionate about problem-solving and algorithm design 🧠</li>
+        </ul>
+    </section>
 
-        <div id="early-life" class="bio-section">
-            <h2>Early Life</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, est nec cursus cursus, odio odio vehicula nisi, nec tincidunt ex elit in arcu.</p>
-        </div>
+    <section class="contact-me">
+        <h2>Contact Me 📬</h2>
+        <p>If you would like to get in touch, please feel free to <a href="mailto:ilgaz.uygur@hisarschool.k12.tr">email me</a> or connect with me on <a href="https://www.linkedin.com/in/ilgaz-uygur" target="_blank">LinkedIn</a>.</p>
+    </section>
 
-        <div id="career" class="bio-section">
-            <h2>Career</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet tincidunt purus, sed interdum mauris. Donec vitae odio purus.</p>
-        </div>
-
-        <div id="achievements" class="bio-section">
-            <h2>Achievements</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris vulputate nunc et arcu ultrices, sed gravida lectus hendrerit.</p>
-        </div>
-
-        <div id="contact" class="bio-section">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, please email me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>
