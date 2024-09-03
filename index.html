@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinan Daniel Cavusoglu</title>
     <style>
-        /* Genel stil ayarları */
+        /* General styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f9;
             color: #333;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
@@ -18,18 +18,22 @@
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         nav {
-            text-align: center;
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #0066cc;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #0066cc;
+            color: #ffffff;
             font-weight: bold;
         }
 
@@ -37,76 +41,43 @@
             color: #003366;
         }
 
-        /* About Me bölümü */
-        .about-me {
+        /* Main content layout */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content > section {
+            flex: 1;
+            min-width: 300px;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
         }
 
-        .about-me h2 {
-            font-size: 1.8em;
+        .content > section h2 {
+            font-size: 1.6em;
             margin-bottom: 15px;
         }
 
-        .about-me p {
+        .content > section p,
+        .content > section li {
             font-size: 1em;
             color: #555;
         }
 
-        /* My Goals bölümü */
-        .my-goals {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-
-        .my-goals h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        .my-goals ul {
+        .content > section ul {
             list-style-type: none;
             padding: 0;
         }
 
-        .my-goals li {
+        .content > section li {
             margin-bottom: 10px;
-            font-size: 1em;
-            color: #555;
         }
 
-        /* Skills & Interests bölümü */
-        .skills-interests {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-
-        .skills-interests h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        .skills-interests ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .skills-interests li {
-            margin-bottom: 10px;
-            font-size: 1em;
-            color: #555;
-        }
-
-        /* Contact Me bölümü */
+        /* Contact Me section */
         .contact-me {
             background-color: #0066cc;
             padding: 20px;
@@ -139,32 +110,40 @@
     <header>
         <h1>Sinan Daniel Cavusoglu</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="CSP Projects.html">CSP </a> |
-            <a href="CS50 Courses.html">CS50 </a> |
+            <a href="index.html">Home</a>
+            <a href="CSP Projects.html">CSP</a>
+            <a href="CS50 Courses.html">CS50</a>
             <a href="Develop in Swift.html">Develop in Swift</a>
         </nav>
     </header>
     
-    <section class="about-me">
-        <h2>About Me 🥇</h2>
-        <p>Hello! I am a 10th grader at Hisar School. I decided to study aboad for university so I had to take a bunch of AP's this year. My main focus will be on my CSP AP becuse I really enjoy the topic and want to learn more about it. I find coding very interesting beause I do engineering in my freetime and hope to not depend on coders in the future.</p>
-    </section>
+    <div class="content">
+        <section class="about-me">
+            <h2>About Me 🥇</h2>
+            <p>Hello! I am a 10th grader at Hisar School. I decided to study abroad for university, so I had to take a bunch of APs this year. My main focus will be on my CSP AP because I really enjoy the topic and want to learn more about it. I find coding very interesting because I do engineering in my free time and hope not to depend on coders in the future.</p>
+        </section>
 
-    <section class="my-goals">
-        <h2>My Goals 🎯</h2>
-        <ul>
-            <li>Being the best in my class 🌟</li>
-            <li>Keeping up with my physical health throughout the year 💪</li>
-        </ul>
-    </section>
+        <section class="my-goals">
+            <h2>My Goals 🎯</h2>
+            <ul>
+                <li>Being the best in my class 🌟</li>
+                <li>Keeping up with my physical health throughout the year 💪</li>
+            </ul>
+        </section>
 
-    <section class="skills-interests">
-        <h2>Skills & Interests 💫</h2>
-        <ul>
-            <li>Experianced engineer 🧠</li>
-            <li>Professional tenis player 🎾</li>
-            <li>Musician 🎸</li>
-        </ul>
+        <section class="skills-interests">
+            <h2>Skills & Interests 💫</h2>
+            <ul>
+                <li>Experienced engineer 🧠</li>
+                <li>Professional tennis player 🎾</li>
+                <li>Musician 🎸</li>
+            </ul>
+        </section>
+    </div>
+
+    <section class="contact-me">
+        <h2>Contact Me 📧</h2>
+        <p>If you'd like to get in touch, please email me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+    </section>
 </body>
 </html>
