@@ -3,82 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Biography</title>
+    <title>İbrahim Erginoğlu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #2a799e;
             color: #333;
         }
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
         .container {
-            width: 80%;
+            width: 60%;
             margin: auto;
             overflow: hidden;
-        }
-        .bio-section {
-            background: #fff;
-            padding: 2em;
-            margin-top: 1em;
+            padding: 20px;
+            background-color: white;
+            margin-top: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
-        img.profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            float: left;
-            margin-right: 20px;
-        }
-        h1, h2 {
-            color: #4CAF50;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
+        h1 {
             text-align: center;
-            padding: 1em;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            font-size: 36px;
+            margin-top: 0;
+        }
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+        .links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+        .emojis {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .about, .recently {
+            margin-top: 30px;
+        }
+        h2 {
+            font-size: 28px;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .recently p {
+            font-style: italic;
+            color: #555;
+        }
+        .recently a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my biography page</p>
-    </header>
-
     <div class="container">
-        <div class="bio-section">
-            <img src="profile-pic.jpg" alt="Your Name" class="profile-pic">
+        <img src"profilfotom.jpg" alt="İbrahim Erginoğlu" class="profile-image">
+        <h1>İbrahim Erginoğlu</h1>
+        <div class="links">
+            <a href="#">Home</a> | 
+            <a href="CSPprojects.html"> CSP projects</a> | 
+            <a href="CS50courses.html">CS 50 Courses</a> | 
+            <a href="DevelopinSwift.html">Develop in Swift</a>
+        </div>
+        <div class="emojis">
+            🤫 🧏‍♂️ 🧑‍💻 📈
+        </div>
+        <div class="about">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Fusce ut tellus sed est vehicula imperdiet sit amet non lacus. Donec varius, metus vel vestibulum suscipit, ipsum arcu commodo sapien, a fermentum erat leo non metus.</p>
+            <p>Hi, I'm Ibrahim Erginoğlu, a 10th-grade student at Hisar School with a passion for computer science. Currently, taking AP Computer Science Principles (CSP) course and learning Python.
+                I love exploring new technologies and solving problems creatively.
+                In my free times I make sure use my time developing myself. Such as, learning about computer science, working in ideaLab as a part of a FRC team and going to gym.
 
-            <h2>Early Life</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            <h2>Career</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-            <h2>Achievements</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit tortor vitae eros aliquet, eu cursus ligula pretium.</p>
-
-            <h2>Contact</h2>
-            <p>If you would like to get in touch, please email me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+</p>
+        </div>
+        <div class="recently">
+            <h2>Recently...</h2>
+            <p>→ I'm helping teach CS47 (Cross-Platform Mobile Development with React Native) this quarter! Check out our website <a href="#">here!</a> <br><em>(January 2022)</em></p>
+            <p>→ I'm going to be joining Figma as a Software Engineering Intern this summer! I'm so excited to be joining the team and working on a product that I enjoy using! <br><em>(November 2021)</em></p>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>
