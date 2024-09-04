@@ -5,62 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day-Based Documentation</title>
     <style>
+        /* General styling */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff; /* Light blue background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9; /* Light gray background */
             color: #333; /* Dark text color for readability */
-        }
-        header {
-            background-color: #4682b4; /* Steel blue */
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .entry {
-            border-bottom: 1px solid #ddd;
-            padding: 1rem 0;
-        }
-        .entry:last-child {
-            border-bottom: none;
-        }
-        .entry-date {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #4682b4; /* Steel blue */
-        }
-        .entry-content {
-            margin-top: 0.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
             line-height: 1.6;
         }
-        .footer {
+
+        header {
             text-align: center;
-            padding: 1rem;
-            background-color: #4682b4; /* Steel blue */
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-bottom: 20px;
         }
+
         .home-link {
             text-align: center;
             margin: 1rem;
         }
+
         .home-link a {
             text-decoration: none;
-            color: #4682b4; /* Steel blue */
+            color: #0066cc; /* Blue color */
             font-weight: bold;
         }
+
         .home-link a:hover {
+            color: #003366; /* Darker blue on hover */
             text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .entry {
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+
+        .entry:last-child {
+            border-bottom: none;
+        }
+
+        .entry-date {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0066cc; /* Blue color */
+        }
+
+        .entry-content {
+            margin-top: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0066cc; /* Blue color */
+            color: #fff; /* White text color */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
