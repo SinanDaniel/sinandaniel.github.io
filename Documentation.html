@@ -9,10 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333; /* Dark text color for readability */
         }
         header {
-            background-color: #333;
+            background-color: #4682b4; /* Steel blue */
             color: #fff;
             padding: 1rem;
             text-align: center;
@@ -34,7 +35,7 @@
         .entry-date {
             font-size: 1.2rem;
             font-weight: bold;
-            color: #333;
+            color: #4682b4; /* Steel blue */
         }
         .entry-content {
             margin-top: 0.5rem;
@@ -43,11 +44,23 @@
         .footer {
             text-align: center;
             padding: 1rem;
-            background-color: #333;
+            background-color: #4682b4; /* Steel blue */
             color: #fff;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .home-link {
+            text-align: center;
+            margin: 1rem;
+        }
+        .home-link a {
+            text-decoration: none;
+            color: #4682b4; /* Steel blue */
+            font-weight: bold;
+        }
+        .home-link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -55,6 +68,9 @@
     <header>
         <h1>Day-Based Documentation</h1>
     </header>
+    <div class="home-link">
+        <a href="index.html">Back to Home</a>
+    </div>
     <div class="container">
         <div class="entry">
             <div class="entry-date">September 4, 2024</div>
