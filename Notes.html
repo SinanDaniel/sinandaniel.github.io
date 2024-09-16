@@ -8,8 +8,8 @@
         /* General styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f4f4f9; /* Light gray background */
+            color: #333; /* Dark text color for readability */
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
@@ -21,140 +21,114 @@
             margin-bottom: 20px;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0066cc;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+        .home-link {
+            text-align: center;
+            margin: 1rem;
         }
 
-        nav a {
-            margin: 0 15px;
+        .home-link a {
             text-decoration: none;
-            color: #ffffff;
+            color: #0066cc; /* Blue color */
             font-weight: bold;
         }
 
-        nav a:hover {
-            color: #003366;
+        .home-link a:hover {
+            color: #003366; /* Darker blue on hover */
+            text-decoration: underline;
         }
 
-        /* Main content layout */
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .content > section {
-            background-color: #fff;
-            padding: 20px;
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff; /* White background */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .content > section h2 {
-            font-size: 1.6em;
-            margin-bottom: 15px;
+        .entry {
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
         }
 
-        .content > section p,
-        .content > section li {
-            font-size: 1em;
-            color: #555;
+        .entry:last-child {
+            border-bottom: none;
         }
 
-        .content > section ul {
-            list-style-type: disc;
+        .entry-topic {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0066cc; /* Blue color */
+        }
+
+        .entry-content {
+            margin-top: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .entry-content ul {
             padding-left: 20px;
+            list-style-type: disc;
         }
 
-        .content > section li {
-            margin-bottom: 10px;
-        }
-
-        /* Notes Section */
-        .notes {
-            background-color: #f4f4f9;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .notes h2 {
+        .footer {
             text-align: center;
-            font-size: 1.8em;
-            margin-bottom: 20px;
+            padding: 1rem;
+            background-color: #0066cc; /* Blue color */
+            color: #fff; /* White text color */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
         }
-
-        .note-section {
-            margin-bottom: 20px;
-        }
-
-        .note-section h3 {
-            font-size: 1.4em;
-            margin-bottom: 10px;
-        }
-
-        .note-section p {
-            font-size: 1em;
-            color: #555;
-        }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>Sinan Daniel Cavusoglu</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="CSP Projects.html">CSP</a>
-            <a href="CS50 Courses.html">CS50</a>
-            <a href="Develop in Swift.html">Develop in Swift</a>
-            <a href="Documentation.html">Documentation</a>
-            <a href="Notes.html">Notes</a>
-        </nav>
+        <h1>Notes</h1>
     </header>
-    
-    <div class="content">
-        <section class="notes">
-            <h2>Notes 📝</h2>
-            <div class="note-section">
-                <h3>Topic 1: Computer Science Principles</h3>
-                <p>This section will cover key notes from my CSP course, including algorithms, problem-solving techniques, and data structures. Below are some takeaways:</p>
-                <ul>
-                    <li>Importance of understanding algorithms</li>
-                    <li>Efficient coding practices</li>
-                    <li>Data management and structures</li>
-                </ul>
-            </div>
-
-            <div class="note-section">
-                <h3>Topic 2: CS50 Lessons</h3>
-                <p>Here are some critical concepts I’ve learned in CS50, ranging from C programming to web development.</p>
-                <ul>
-                    <li>Memory management in C</li>
-                    <li>Understanding dynamic data allocation</li>
-                    <li>Introduction to JavaScript and web-based projects</li>
-                </ul>
-            </div>
-
-            <div class="note-section">
-                <h3>Topic 3: Develop in Swift</h3>
-                <p>In my journey of learning Swift, I’ve made significant progress in building apps, mastering the basics of Xcode, and understanding Swift syntax.</p>
-                <ul>
-                    <li>Basic control flow in Swift</li>
-                    <li>Working with UI elements in Xcode</li>
-                    <li>Understanding Swift's optionals and error handling</li>
-                </ul>
-            </div>
-        </section>
+    <div class="home-link">
+        <a href="index.html">Back to Home</a>
     </div>
+    <div class="container">
+        <div class="entry">
+            <div class="entry-topic">Swift Programming Basics</div>
+            <div class="entry-content">
+                <ul>
+                    <li>Swift is a powerful programming language used for iOS and macOS development.</li>
+                    <li>Key concepts include variables, constants, and optionals.</li>
+                    <li>Swift allows safe and expressive code, avoiding null pointer exceptions.</li>
+                    <li>Optionals are a core feature that handles the absence of a value.</li>
+                </ul>
+            </div>
+        </div>
 
-    <section class="contact-me">
-        <h2>Contact Me 📧</h2>
-        <p>If you'd like to get in touch, please email me at <a href="mailto:sinan.cavusoglu@hisarschool.k12.tr">sinan.cavusoglu@hisarschool.k12.tr</a>.</p>
-    </section>
+        <div class="entry">
+            <div class="entry-topic">CS50: C Programming Language</div>
+            <div class="entry-content">
+                <ul>
+                    <li>Introduction to low-level programming with C.</li>
+                    <li>Understanding memory management, pointers, and arrays.</li>
+                    <li>Efficient algorithm design and implementation with C.</li>
+                    <li>Challenges of manual memory allocation and deallocation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-topic">Developing with Xcode</div>
+            <div class="entry-content">
+                <ul>
+                    <li>Xcode is the integrated development environment (IDE) for building apps for Apple platforms.</li>
+                    <li>Features include a powerful code editor, design interface builder, and debugging tools.</li>
+                    <li>Swift Playgrounds provides a beginner-friendly environment to experiment with Swift code.</li>
+                    <li>Storyboard and SwiftUI are tools to design app interfaces within Xcode.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Sinan Daniel Cavusoglu. All rights reserved.
+    </div>
 </body>
 </html>
